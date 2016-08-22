@@ -10,16 +10,14 @@ header menu ul li { margin: 0.8em;
 				 	padding: 0;
 				 	float: left; }
 
-menu#side-menu { min-width: 6em;
+menu#side-menu { min-width: 8em;
 				 max-width: 25%;
 				 height: 100%; }
-menu#side-menu ul { margin: 1em; }
 menu#side-menu ul li { padding: 1em;
 					   border-bottom: 1px solid #ccc; }
 
 
 
 /** TYPOGRAPHY **/
-header h1#heading { color: #ccc;
-					margin-left: 0.3em;  }
+header h1 { color: #ccc; }
 header menu ul li { color: #ccc; }
