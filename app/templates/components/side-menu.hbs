@@ -3,7 +3,9 @@
 
 <menu id="side-menu">
 	<ul>
-	<li>Dashboard #1</li>
-	<li>Dashboard #2</li>
+		{{#each board as |dashboard|}}
+			<li>{{#link-to 'dashboard' id}}{{title}}{{/link-to}}</li>
+		{{/each}}
+		<li>{{fa-icon 'fa-plus-circle'}} Add new dashboard</li>
 	</ul>
 </menu>

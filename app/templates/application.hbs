@@ -2,13 +2,11 @@
 		<h1 class="three columns">Reports</h1>
 		<menu class="nine columns" id="top-menu">
 			<ul>
-			<li>{{fa-icon "fa-wrench"}} Settings</li>
-			<li>{{fa-icon "fa-user"}} Profile</li>
-			<li>{{fa-icon "fa-bell"}} Notifications</li>
+				<li>{{fa-icon "fa-bell"}} Notifications</li>
+				{{#link-to 'settings'}}<li>{{fa-icon "fa-wrench"}} Settings</li>{{/link-to}}
+				{{#link-to 'profile'}}<li id="header-notification">{{fa-icon "fa-user"}} Profile</li>{{/link-to}}
 			</ul>
 		</menu>
 </header>
-
-{{side-menu}}
 
 {{outlet}}
