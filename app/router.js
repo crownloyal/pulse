@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('dashboard', function() {
     this.route('new');
-    this.route('board', { path: '/dashboard/:post_id' })
+    this.route('board', { path: '/dashboard/:post_id' });
   });
   this.route('settings');
   this.route('profile');
