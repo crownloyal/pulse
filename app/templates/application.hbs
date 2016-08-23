@@ -3,9 +3,10 @@
 		<h1 class="three columns">{{#link-to 'index'}}Reports{{/link-to}}</h1>
 		<menu class="nine columns" id="top-menu">
 			<ul>
-				<li>{{fa-icon "fa-bell"}} Notifications</li>
-				{{#link-to 'settings'}}<li>{{fa-icon "fa-wrench"}} Settings</li>{{/link-to}}
-				{{#link-to 'profile'}}<li id="header-notification">{{fa-icon "fa-user"}} Profile</li>{{/link-to}}
+				<li>{{#link-to 'dashboard'}}Dashboard{{/link-to}}</li>
+				<li id="header-notification">{{fa-icon "fa-bell"}} Notifications</li>
+				<li>{{#link-to 'settings'}}{{fa-icon "fa-wrench"}} Settings{{/link-to}}</li>
+				<li>{{#link-to 'profile'}}{{fa-icon "fa-user"}} Profile{{/link-to}}</li>
 			</ul>
 		</menu>
 	</div>
