@@ -30,7 +30,7 @@ export default function() {
  this.get('/dashboards/1', function() {
     return { "dashboard": [{ 
       id: 1,
-      title: 'Dashboard #1',
+      name: 'Dashboard #1',
       text: 'Yadda yadda yadda.'}]
     };
   });
@@ -38,12 +38,12 @@ export default function() {
  this.get('/dashboards/2', function() {
     return { "dashboard": [{ 
       id: 2,
-      title: 'Dashboard #2',
+      name: 'Dashboard #2',
       text: 'Yeah yeah yeah.'}]
     };
   });
 
- this.get('/profile', function() {
+ this.get('/profiles', function() {
     return { "profile": [{ 
       id: 1,
       name: 'Dominic',

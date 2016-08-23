@@ -953,10 +953,13 @@ menu.side-menu ul li { padding: 1em;
 menu.side-menu.right { right: 0;
 					   border-left: 1px solid #ccc; }
 menu.side-menu.left { border-right: 1px solid #ccc; }
+menu.side-menu.left a.active::after { content: '>';
+                                      float: right;  }
 
 
 /** TYPOGRAPHY **/
-header h1 { color: #ccc; }
+header h1 b { color: #ccc; }
 header menu ul li { color: #ccc; }
-
+.active { color: #8cb202;
+		  text-decoration: underline; }
 .fa { padding: 0 0.25em }
