@@ -27,7 +27,7 @@ export default function() {
     };
   });
 
- this.get('/dashboard/1', function() {
+ this.get('/dashboards/1', function() {
     return { "dashboard": [{ 
       id: 1,
       title: 'Dashboard #1',
@@ -35,7 +35,7 @@ export default function() {
     };
   });
 
- this.get('/dashboard/2', function() {
+ this.get('/dashboards/2', function() {
     return { "dashboard": [{ 
       id: 2,
       title: 'Dashboard #2',
