@@ -14,9 +14,9 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1080px;
+  max-width: 1680px;
   margin: 0 auto;
-  padding: 0 1em;
+  /*padding: 0 1em;*/
   box-sizing: border-box; }
 
 .column, .columns {
@@ -934,6 +934,7 @@ header { width: 100%;
 		 height: 3em ;
 		 background: #232323;
 		 padding: 0 1em; }
+header menu#top-menu { margin-left: 0 !important; }
 header menu ul { margin: 0;
 				 padding: 0;
 				 float: right;
@@ -941,17 +942,17 @@ header menu ul { margin: 0;
 header menu ul li { margin: 0.8em;
 				 	padding: 0;
 				 	float: left; }
-header menu .columns { margin-left: 0!important; }
 header menu ul li:last-child { border-left: 1px solid #ccc;
 							   padding-left: 1.5em }				 	
 
-menu#side-menu { max-width: 25%;
-				 height: 100%;
-				 position: fixed;
-				 border-right: 1px solid #ccc; }
-menu#side-menu ul li { padding: 1em;
+menu.side-menu { max-width: 25%;
+				 height: 100%; 
+				 position: fixed; }
+menu.side-menu ul li { padding: 1em;
 					   border-bottom: 1px solid #ccc; }
-
+menu.side-menu.right { right: 0;
+					   border-left: 1px solid #ccc; }
+menu.side-menu.left { border-right: 1px solid #ccc; }
 
 
 /** TYPOGRAPHY **/

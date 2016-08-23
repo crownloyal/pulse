@@ -1,11 +1,8 @@
-{{yield}}
-
-
-<menu id="side-menu">
+<menu class="side-menu left three columns">
 	<ul>
 		{{#each board as |dashboard|}}
 			<li>{{#link-to 'dashboard' id}}{{title}}{{/link-to}}</li>
 		{{/each}}
-		<li>{{fa-icon 'fa-plus-circle'}} Add new dashboard</li>
+		<li>{{#link-to 'dashboard.new'}}{{fa-icon 'fa-plus-circle'}} Add new dashboard{{/link-to}}</li>
 	</ul>
 </menu>
