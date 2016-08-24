@@ -962,9 +962,12 @@ footer { clear: all;
 
 /** TYPOGRAPHY **/
 header h1 b { color: #ccc; }
-header menu ul li { color: #ccc; }
-.active { color: #8cb202;
-		  text-decoration: underline; }
+header menu ul li a { color: #ccc; }
+header .active::after { color: #8cb202;
+		  				content: '■';
+		  				position: relative;
+		  				top: 1em;
+		  				right: 2.8em; }
 .fa { padding: 0 0.25em }
 footer { font-size: 0.8em;
 		 color: #d1d1d1; }
