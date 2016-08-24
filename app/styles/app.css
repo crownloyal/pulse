@@ -956,6 +956,13 @@ menu.side-menu.left { border-right: 1px solid #ccc; }
 menu.side-menu.left a.active::after { content: '■';
                                       float: right;  }
 
+.drop-zone { border: 10px dashed #ccc;
+    		 width: 300px;
+    		 min-height: 300px;
+    		 display: flex;
+			 height: 100%;
+			 justify-content: center; }
+
 footer { clear: all;
 		 width: 100%;
 		 margin: 1em; }
@@ -969,5 +976,6 @@ header .active::after { color: #8cb202;
 		  				top: 1em;
 		  				right: 2.8em; }
 .fa { padding: 0 0.25em }
+.drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
 footer { font-size: 0.8em;
 		 color: #d1d1d1; }
