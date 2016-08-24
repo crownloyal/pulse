@@ -953,9 +953,12 @@ menu.side-menu ul li { padding: 1em;
 menu.side-menu.right { right: 0;
 					   border-left: 1px solid #ccc; }
 menu.side-menu.left { border-right: 1px solid #ccc; }
-menu.side-menu.left a.active::after { content: '>';
+menu.side-menu.left a.active::after { content: '■';
                                       float: right;  }
 
+footer { clear: all;
+		 width: 100%;
+		 margin: 1em; }
 
 /** TYPOGRAPHY **/
 header h1 b { color: #ccc; }
@@ -963,3 +966,5 @@ header menu ul li { color: #ccc; }
 .active { color: #8cb202;
 		  text-decoration: underline; }
 .fa { padding: 0 0.25em }
+footer { font-size: 0.8em;
+		 color: #d1d1d1; }
