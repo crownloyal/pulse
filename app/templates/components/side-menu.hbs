@@ -1,6 +1,6 @@
 <menu class="side-menu left three columns">
 	<ul>
-		{{#each model as |dashboard|}}
+		{{#each model key="id" as |dashboard|}}
 			<li>{{#link-to 'dashboard.board' dashboard.id}}{{fa-icon 'fa-hashtag'}}{{dashboard.name}}{{/link-to}}</li>
 		{{/each}}
 		<li>{{#link-to 'dashboard.new'}}{{fa-icon 'fa-plus-circle'}}Add new dashboard{{/link-to}}</li>
