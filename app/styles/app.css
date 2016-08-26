@@ -930,8 +930,7 @@ hr {
   */
 
 
-header { width: 100%;
-		 height: 3em ;
+header { height: 3em ;
 		 background: #232323;
 		 padding: 0 1em; }
 header menu#top-menu { margin-left: 0 !important; }
@@ -955,6 +954,9 @@ menu.side-menu.right { right: 0;
 menu.side-menu.left { border-right: 1px solid #ccc; }
 menu.side-menu.left a.active::after { content: '■';
                                       float: right;  }
+
+.profile-user-image img { border-radius: 50%;
+                          height: 8em; }
 
 .drop-zone { border: 10px dashed #ccc;
     		 width: 300px;

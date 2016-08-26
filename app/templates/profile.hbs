@@ -1,10 +1,22 @@
 <div class="container">
-	<div class="three columns" id="user-image">
-		<img src="{{profile.image}}">
-	</div>
-	<div class="nine columns">
-	{{model.name}} {{profile.lastname}}
-	<hr>
-	{{profile.email}}
-	</div>
+
+
+		<div class="three columns profile-user-image">
+			{{#if profile.image}}
+				<img src="{{image}}">
+			{{else}}
+				<img src="http://lorempixel.com/200/200/people">
+			{{/if}}
+		</div>
+		<div class="five columns">
+			{{#if profile}}
+				<h4>{{name}} {{profile.lastname}}</h4>
+				<p>{{profile.email}}</p>
+			{{else}}
+				<h4>Ooops!</h4>
+				<p>Couldn't load profile - are you logged in?</p>
+				<p class="warning">We're sorry - this shouldn't have happened!</p>
+			{{/if}}
+		</div>
+
 </div>
