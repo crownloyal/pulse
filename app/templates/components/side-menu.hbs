@@ -1,7 +1,7 @@
 <menu class="side-menu left three columns">
 	<ul>
-		{{#each model as |dashboard|}}
-			<li>{{#link-to 'dashboard.board' id}}{{fa-icon 'fa-hashtag'}}{{name}}{{/link-to}}</li>
+		{{#each dashboard as |model|}}
+			<li>{{#link-to 'dashboard.board' model.id}}{{fa-icon 'fa-hashtag'}}{{model.name}}{{/link-to}}</li>
 		{{/each}}
 		<li>{{#link-to 'dashboard.new'}}{{fa-icon 'fa-plus-circle'}}Add new dashboard{{/link-to}}</li>
 	</ul>
