@@ -10,13 +10,14 @@
   Licensed under the MIT License
 
   */
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Lato|Scope+One)
+
 .container {
   position: relative;
   width: 100%;
   max-width: 2480px;
   margin: 0 auto;
-  /*padding: 0 1em;*/
+  /*padding: 0 1em;  --  We don't want a centered webpage*/
   box-sizing: border-box; }
 
 .column, .columns {
@@ -164,7 +165,7 @@
 
 table {
   margin: 1rem 0;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   min-width: 100%;
   background-color: #FFF;
   color: #444F5F; }
@@ -182,7 +183,7 @@ table {
   .table-outter th:last-child, .table-outter td:last-child {
     padding-right: 0; }
   .table-outter table {
-    font-family: "Helvetica Neue", "Roboto", sans-serif; }
+    font-family: "Lato", sans-serif; }
   .table-outter td {
     min-width: 100%; }
 
@@ -217,7 +218,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure,
@@ -246,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #444F5F;
   margin-top: 0;
   margin-bottom: 2rem;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Scope One", serif;
   font-weight: 300;
   line-height: 1.1; }
 
@@ -335,7 +336,7 @@ a {
   letter-spacing: .1rem;
   cursor: pointer;
   margin: 0 0 1rem 0;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   border: 0;
   height: 20px;
   border-radius: 3px;
@@ -379,7 +380,7 @@ a {
 
 input[type=text] {
   font-size: 18px;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 10px 10px 10px 5px;
   color: #d1d1d1;
   width: 50%;
@@ -393,7 +394,7 @@ label {
   color: #444F5F;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   margin-right: 0.5rem; }
 
 @media (max-width: 550px) {
@@ -478,7 +479,7 @@ label {
   float: left; }
 
 .utility.space-2 {
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #d1d1d1;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -488,7 +489,7 @@ label {
     border-bottom: 1px solid #d1d1d1; }
 
 .utility.space-5 {
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #d1d1d1;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -498,7 +499,7 @@ label {
     border-bottom: 1px solid #d1d1d1; }
 
 .utility.space-10 {
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #d1d1d1;
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -568,7 +569,7 @@ label {
   padding-bottom: 60px; }
 
 nav {
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: #FFF;
   height: 60px;
@@ -759,7 +760,7 @@ body {
   font-size: 1.6em;
   line-height: 1.5;
   font-weight: 300;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #444F5F;
   margin: 0;
   position: relative;
@@ -772,7 +773,7 @@ code {
   white-space: nowrap;
   background: #444F5F;
   color: #FFF;
-  font-family: "Helvetica Neue", "Roboto", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 pre > code {
   text-align: initial;
@@ -851,7 +852,7 @@ hr {
   background-color: #FFF;
   text-align: center;
   color: #444F5F;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 10rem 0;
   margin-bottom: 5rem; }
   .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6, .hero p {
@@ -884,7 +885,7 @@ hr {
 
 .modal {
   position: fixed;
-  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   top: 0;
   right: 0;
   bottom: 0;
@@ -956,7 +957,8 @@ menu.side-menu.left a.active::after { content: '■';
                                       float: right;  }
 
 .profile-user-image img { border-radius: 50%;
-                          height: 8em; }
+                          height: 8em;
+                          float: right; }
 
 .drop-zone { border: 10px dashed #ccc;
     		 width: 300px;
@@ -966,18 +968,18 @@ menu.side-menu.left a.active::after { content: '■';
 			 justify-content: center; }
 
 footer { clear: all;
-		 width: 100%;
-		 margin: 1em; }
+    		 width: 100%;
+    		 margin: 1em; }
 
 /** TYPOGRAPHY **/
-header h1 b { color: #ccc; }
+header h1 { font-family: 'Scope One', cursive; }
 header menu ul li a { color: #ccc; }
 header .active::after { color: #8cb202;
 		  				content: '■';
 		  				position: relative;
-		  				top: 1em;
+		  				top: 0.9em;
 		  				right: 2.8em; }
-.fa { padding: 0 0.25em }
+.fa { padding: 0 0.5em }
 .drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
 footer { font-size: 0.8em;
 		 color: #d1d1d1; }
