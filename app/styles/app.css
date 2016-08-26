@@ -317,12 +317,9 @@ p {
 a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #a7c638;
+  color: #009933;
   text-decoration: none; }
-  a:hover {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    color: #8cb202; }
+  a:hover { color: #00cc00; }
 
 .btn, button, input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
@@ -358,7 +355,7 @@ a {
     background-color: #a7c638; }
     .btn.primary:hover, .btn.primary:focus, button.primary:hover, button.primary:focus, input[type="submit"].primary:hover, input[type="submit"].primary:focus, input[type="reset"].primary:hover, input[type="reset"].primary:focus, input[type="button"].primary:hover, input[type="button"].primary:focus {
       color: #FFF;
-      background-color: #8cb202; }
+      background-color: #009900; }
   .btn.success, button.success, input[type="submit"].success, input[type="reset"].success, input[type="button"].success {
     color: #FFF;
     background-color: #41b497; }
@@ -932,8 +929,8 @@ hr {
 
 
 header { height: 3em ;
-		 background: #232323;
-		 padding: 0 1em; }
+    		 background: #232323;
+    		 padding: 0 1em; }
 header menu#top-menu { margin-left: 0 !important; }
 header menu ul { margin: 0;
 				 padding: 0;
@@ -943,11 +940,11 @@ header menu ul li { margin: 0.8em;
 				 	padding: 0;
 				 	float: left; }
 header menu ul li:last-child { border-left: 1px solid #ccc;
-							   padding-left: 1.5em }				 	
+							                 padding-left: 1.5em }				 	
 
 menu.side-menu { max-width: 25%;
 				 height: 100%; 
-				 position: fixed; }
+				 position: absolute; }
 menu.side-menu ul li { padding: 1em;
 					   border-bottom: 1px solid #ccc; }
 menu.side-menu.right { right: 0;
@@ -961,11 +958,11 @@ menu.side-menu.left a.active::after { content: '■';
                           float: right; }
 
 .drop-zone { border: 10px dashed #ccc;
-    		 width: 300px;
-    		 min-height: 300px;
-    		 display: flex;
-			 height: 100%;
-			 justify-content: center; }
+        		 width: 300px;
+        		 min-height: 300px;
+        		 display: flex;
+    			   height: 100%;
+    			   justify-content: center; }
 
 footer { clear: all;
     		 width: 100%;
@@ -973,13 +970,15 @@ footer { clear: all;
 
 /** TYPOGRAPHY **/
 header h1 { font-family: 'Scope One', cursive; }
-header menu ul li a { color: #ccc; }
-header .active::after { color: #8cb202;
-		  				content: '■';
-		  				position: relative;
-		  				top: 0.9em;
-		  				right: 2.8em; }
+header a { color: #ccc; }
+header a:hover { color: #009933; }
+header menu ul li .active::after { color: #009933;
+                                   content: '■';
+                                   position: relative;
+                                   top: 0.9em;
+                                   right: 2.8em; }
+
 .fa { padding: 0 0.5em }
 .drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
 footer { font-size: 0.8em;
-		 color: #d1d1d1; }
+		     color: #d1d1d1; }
