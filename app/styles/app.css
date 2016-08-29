@@ -930,7 +930,7 @@ hr {
 
 header { height: 3em ;
     		 background: #232323;
-    		 padding: 0 1em; }
+    		 padding: 1em; }
 header menu#top-menu { margin-left: 0 !important; }
 header menu ul { margin: 0;
 				 padding: 0;
@@ -940,7 +940,8 @@ header menu ul li { margin: 0.8em;
 				 	padding: 0;
 				 	float: left; }
 header menu ul li:last-child { border-left: 1px solid #ccc;
-							                 padding-left: 1.5em }				 	
+							                 padding-left: 1.5em }	
+header menu ul li a.active i { color: #009933; }			 	
 
 menu.side-menu { max-width: 25%;
 				 height: 100%; 
@@ -949,7 +950,7 @@ menu.side-menu ul li { padding: 1em;
 					   border-bottom: 1px solid #ccc; }
 menu.side-menu.right { right: 0;
 					   border-left: 1px solid #ccc; }
-menu.side-menu.left { border-right: 1px solid #ccc; }
+menu.side-menu.left ul li { border-right: 1px solid #ccc; }
 menu.side-menu.left a.active::after { content: '■';
                                       float: right;  }
 
@@ -972,11 +973,6 @@ footer { clear: all;
 header h1 { font-family: 'Scope One', cursive; }
 header a { color: #ccc; }
 header a:hover { color: #009933; }
-header menu ul li .active::after { color: #009933;
-                                   content: '■';
-                                   position: relative;
-                                   top: 0.9em;
-                                   right: 2.8em; }
 
 .fa { padding: 0 0.5em }
 .drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
