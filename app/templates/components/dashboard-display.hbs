@@ -1,4 +1,10 @@
-<div class="nine columns">
-	<h3>{{model.name}}</h3>
-	<p>{{model.text}}</p>
+<div class="nine columns dashboard-wrapper row">
+	<div class="eleven columns">
+		<h3>{{model.name}}</h3>
+		<p>{{model.text}}</p>
+	</div>
+	<div class="one column">
+	<button {{action "toggleEditDashboard"}}>Edit</button>
+	{{editDashboard}}
+	</div>
 </div>

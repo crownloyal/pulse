@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 2480px;
   margin: 0 auto;
-  /*padding: 0 1em;  --  We don't want a centered webpage*/
+  /*padding: 0 1em;  //--  We don't want a centered webpage*/
   box-sizing: border-box; }
 
 .column, .columns {
@@ -328,18 +328,13 @@ a {
   color: #444F5F;
   background-color: #FFF;
   text-align: center;
-  font-size: 11px;
-  font-weight: 400;
   letter-spacing: .1rem;
   cursor: pointer;
-  margin: 0 0 1rem 0;
   font-family: "Lato", sans-serif;
   border: 0;
-  height: 20px;
   border-radius: 3px;
   line-height: 20px;
-  font-size: 0.65em;
-  padding: 1rem 4rem; }
+  padding: 0.5rem 2rem; }
   .btn.sharp, button.sharp, input[type="submit"].sharp, input[type="reset"].sharp, input[type="button"].sharp {
     border-radius: 0; }
   .btn:hover, .btn:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus {
@@ -961,6 +956,8 @@ menu.side-menu.left a.active::after {
   height: 8em;
   float: right; }
 
+.dashboard-wrapper { padding: 1em; } 
+
 .drop-zone { border: 10px dashed #ccc;
         		 width: 300px;
         		 min-height: 300px;
@@ -974,6 +971,7 @@ footer { clear: all;
 
 /** TYPOGRAPHY **/
 header h1 { font-family: 'Scope One', cursive; }
+header h1:hover { color: #009933; }
 header a { color: #ccc; }
 header a:hover { color: #009933; }
 
