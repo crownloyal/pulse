@@ -953,7 +953,7 @@ menu.side-menu.left a::after {
   position: relative;
   right: 2rem;
   opacity: 0;
-  transition: right .2s ease-in;  }
+  transition: right .15s ease-out;  }
 menu.side-menu.left a.active::after { 
   content: '■';
   float: right;
