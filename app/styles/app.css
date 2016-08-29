@@ -323,8 +323,8 @@ a {
 
 .btn, button, input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   color: #444F5F;
   background-color: #FFF;
   text-align: center;
@@ -402,8 +402,8 @@ label {
   margin: 0 1rem 0 0;
   cursor: pointer; }
   .checkbox:before {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     content: "";
     position: absolute;
     left: 0;
@@ -947,9 +947,18 @@ menu.side-menu ul li { padding: 1em;
 menu.side-menu.right { right: 0;
 					   border-left: 1px solid #ccc; }
 menu.side-menu.left ul li { border-right: 1px solid #ccc; }
+menu.side-menu.left a::after { 
+  content: '■';
+  float: right;
+  position: relative;
+  right: 2rem;
+  opacity: 0;
+  transition: right .2s ease-in;  }
 menu.side-menu.left a.active::after { 
   content: '■';
-  float: right;  }
+  float: right;
+  right: 0;
+  opacity: 1; }
 
 .profile-user-image img { 
   border-radius: 50%;
