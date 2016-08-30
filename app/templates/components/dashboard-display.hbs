@@ -4,6 +4,7 @@
 		<p>{{model.text}}</p>
 	</div>
 	<div class="one column">
-	{{#link-to 'dashboard.board.edit' model.id}}Edit{{/link-to}}
+	<button {{action "toggleEditDashboard"}}>Edit me!</button>
+	{{#link-to 'dashboard.board.edit' model.id action="toggleEditDashboard"}}Edit{{/link-to}}
 	</div>
 </div>
