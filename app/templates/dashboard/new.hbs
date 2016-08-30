@@ -1,2 +1,18 @@
-{{dashboard-drop}}
-{{menu-graph-drag}}
+<div class="offset-by-three nine columns dashboard-wrapper">	
+	<h3>
+		{{#if model.name}}
+			{{model.name}}
+		{{else}}
+			Name of the Dashboard
+		{{/if}}
+	</h3>
+	<p>
+		{{#if model.text}}
+			{{model.text}}
+		{{else}}
+			Description.
+		{{/if}}
+	</p>
+	{{dashboard-drop}}
+	{{menu-graph-drag model=model}}
+</div>

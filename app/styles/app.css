@@ -965,7 +965,7 @@ menu.side-menu.left a.active::after {
   height: 8em;
   float: right; }
 
-.dashboard-wrapper { padding: 1em; } 
+.dashboard-wrapper { padding: 1em 0; } 
 
 .drop-zone { border: 10px dashed #ccc;
         		 width: 300px;
