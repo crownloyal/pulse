@@ -1,10 +1,9 @@
-<div class="nine columns dashboard-wrapper row">
+<div class="offset-by-three nine columns dashboard-wrapper row">
 	<div class="eleven columns">
 		<h3>{{model.name}}</h3>
 		<p>{{model.text}}</p>
 	</div>
 	<div class="one column">
-	<button {{action "toggleEditDashboard"}}>Edit</button>
-	{{editDashboard}}
+	{{#link-to 'dashboard.board.edit' model.id}}Edit{{/link-to}}
 	</div>
 </div>
