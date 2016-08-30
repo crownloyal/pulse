@@ -1,2 +1,10 @@
-{{dashboard-display model=model}}
+<div class="nine columns dashboard-wrapper row">
+	<div class="eleven columns">
+		<h3>{{model.name}}</h3>
+		<p>{{model.text}}</p>
+
+		{{#link-to 'dashboard.board.edit' model.id}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
+	</div>
+</div>
+
 {{outlet}}

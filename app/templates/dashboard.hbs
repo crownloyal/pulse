@@ -1,6 +1,4 @@
 <div class="container">
-		{{#if "isEditingDashboard"}}
-		{{side-menu dashboard=model}}
-		{{/if}}
+			{{side-menu dashboard=model isEditingDashboard=isEditingDashboard}}
 		{{outlet}}
 </div>

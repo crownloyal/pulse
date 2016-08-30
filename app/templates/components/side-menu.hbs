@@ -1,4 +1,4 @@
-<menu class="side-menu left three columns">
+<menu class="side-menu left three columns {{if isEditingDashboard 'slide' ''}}">
 	<ul>
 		{{#each dashboard as |model|}}
 			<li>{{#link-to 'dashboard.board' model.id}}{{fa-icon 'fa-hashtag'}}{{model.name}}{{/link-to}}</li>
