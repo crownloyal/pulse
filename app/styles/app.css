@@ -969,7 +969,7 @@ menu.side-menu.left a.active::after {
   height: 8em;
   float: right; }
 
-.dashboard-wrapper { padding: 1em 0; } 
+button { border: 1px solid; }
 
 .drop-zone { border: 10px dashed #ccc;
         		 width: 300px;
@@ -978,9 +978,17 @@ menu.side-menu.left a.active::after {
     			   height: 100%;
     			   justify-content: center; }
 
-footer { clear: all;
-    		 width: 100%;
-    		 margin: 1em; }
+footer { 
+  position: absolute;
+  bottom: 0;
+  clear: both;
+  width: 100%;
+  padding-top: 2em;
+  border-top: 1px solid #ccc; }
+
+footer .wrapper {
+  text-align: center;
+}
 
 /** TYPOGRAPHY **/
 header h1 { font-family: 'Scope One', cursive; }

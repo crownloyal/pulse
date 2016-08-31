@@ -2,16 +2,16 @@
 
 
 		<div class="offset-by-one two columns profile-user-image">
-			{{#if profile.image}}
-				<img src="{{image}}">
+			{{#if model.image}}
+				<img src="{{model.image}}">
 			{{else}}
 				<img src="http://lorempixel.com/200/200/people">
 			{{/if}}
 		</div>
 		<div class="five columns">
-			{{#if profile}}
-				<h4>{{name}} {{profile.lastname}}</h4>
-				<p>{{profile.email}}</p>
+			{{#if model}}
+				<h4>{{model.name}} {{model.lastname}}</h4>
+				<p>{{model.email}}</p>
 			{{else}}
 				<h4>Ooops!</h4>
 				<p>Couldn't load profile - are you logged in?</p>

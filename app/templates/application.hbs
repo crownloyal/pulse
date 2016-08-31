@@ -6,7 +6,7 @@
 				<li>{{#link-to 'dashboard'}}{{fa-icon "fa-tachometer"}}Dashboard{{/link-to}}</li>
 				<li id="header-notification">{{fa-icon "fa-bell"}}Notifications</li>
 				<li>{{#link-to 'settings'}}{{fa-icon "fa-wrench"}}Settings{{/link-to}}</li>
-				<li>{{#link-to 'profile'}}{{fa-icon "fa-user"}}Profile{{/link-to}}</li>
+				<li>{{#link-to 'profile'}}{{fa-icon "fa-user"}} {{#if model.profile}}{{model.profile.name}}{{else}}Profile{{/if}}{{/link-to}}</li>
 			</ul>
 		</menu>
 	</div>
@@ -15,7 +15,7 @@
 {{outlet}}
 
 {{!-- <footer>
-	<div class="container">
+	<div class="container wrapper">
 		<p>&copy; 2016 Mozy.com</p>
 	</div>
 </footer> --}}
