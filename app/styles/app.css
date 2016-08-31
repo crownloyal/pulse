@@ -945,8 +945,11 @@ menu.side-menu {
 				 position: absolute; }
 menu.side-menu ul li { padding: 1em;
 					   border-bottom: 1px solid #ccc; }
-menu.side-menu.right { right: 0;
-					   border-left: 1px solid #ccc; }
+menu.side-menu.right { 
+  right: 0;
+  border-left: 1px solid #ccc; }
+menu.side-menu.right input { width: 100%; }
+
 menu.side-menu.left ul li { border-right: 1px solid #ccc; }
 menu.side-menu.left a::after { 
   content: '■';
@@ -984,6 +987,8 @@ header h1 { font-family: 'Scope One', cursive; }
 header h1:hover { color: #009933; }
 header a { color: #ccc; }
 header a:hover { color: #009933; }
+
+.container h3 { margin-top: 0.5em; }
 
 .fa { padding: 0 0.5em }
 .drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
