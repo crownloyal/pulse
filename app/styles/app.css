@@ -922,13 +922,6 @@ hr {
 
   */
 
-body {
-  -webkit-transition: all 250ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-   -moz-transition: all 250ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-     -o-transition: all 250ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-        transition: all 250ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
-}
-
 header { height: 3em ;
     		 background: #232323;
     		 padding: 1em; }
@@ -974,14 +967,17 @@ menu.side-menu.left a.active::after {
   opacity: 0.2; }
 .edit .container.content { 
   transform: translateX(-25%); }
+.container { transition: all 250ms cubic-bezier(0.250, 0.100, 0.250, 1.000); }
+
 
 .profile-user-image img { 
   border-radius: 50%;
   height: 8em;
   float: right; }
 
-.dashboard-wrapper { padding: 1em 0; } 
+.container.content { padding: 0.1em 0; } /* Please don't ask me about this. */
 
+.side-menu.right input { width: 100%; }
 .drop-zone { border: 10px dashed #ccc;
         		 width: 300px;
         		 min-height: 300px;
