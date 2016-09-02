@@ -922,6 +922,7 @@ hr {
 
   */
 
+/* Header */
 header { height: 3em ;
     		 background: #232323;
     		 padding: 1em; }
@@ -938,6 +939,7 @@ header menu ul li:last-child { border-left: 1px solid #ccc;
 							                 padding-left: 1.5em }
 header menu ul li a.active i { color: #009933; }
 
+/* Menus */
 menu.side-menu {
          max-width: 25%;
          top: 0em;
@@ -967,17 +969,17 @@ menu.side-menu.left a.active::after {
   opacity: 0.2; }
 .edit .container.content {
   transform: translateX(-25%); }
-.container { transition: all 250ms cubic-bezier(0.250, 0.100, 0.250, 1.000); }
+.container { transition: all 350ms cubic-bezier(0.250, 0.100, 0.250, 1.000); }
+.container.content { padding: 0.1em 0; } /* Please don't ask me about this. */
+.side-menu.right input { width: 100%; }
 
 
+/* Content styles */
 .profile-user-image img {
   border-radius: 50%;
   height: 8em;
   float: right; }
 
-.container.content { padding: 0.1em 0; } /* Please don't ask me about this. */
-
-.side-menu.right input { width: 100%; }
 .drop-zone { border: 10px dashed #ccc;
         		 width: 300px;
         		 min-height: 300px;
@@ -989,16 +991,24 @@ footer { clear: all;
     		 width: 100%;
     		 margin: 1em; }
 
+.container .empty-state { 
+  background: url('/assets/img/old_wall.png');
+  min-height: 20em;
+  width: 78%;
+  margin-left: 0; }
+
 /** TYPOGRAPHY **/
 header h1 { font-family: 'Scope One', cursive; }
 header h1:hover { color: #009933; }
 header a { color: #ccc; }
 header a:hover { color: #009933; }
-container .empty-state h1,
-container .empty-state h2,
-container .empty-state h3,
-container .empty-state h4,
-container .empty-state p { color: #ccc; }
+.container .empty-state h1,
+.container .empty-state h2,
+.container .empty-state h3,
+.container .empty-state h4,
+.container .empty-state p { 
+  color: #aaa;
+  text-align: center; }
 
 
 .fa { padding: 0 0.5em }
