@@ -23,6 +23,12 @@ nav {
   box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75); }
 
 nav ul li { width: 100%; }
+nav ul li a::after {
+    content: '■';
+    display: none; }
+nav ul li a.active::after {
+  float: right; 
+  display: block; }
 
 .edit .side-menu.left { transform: translateX(-85%); }
 .edit .container.content { transform: translateX(-25%); }
