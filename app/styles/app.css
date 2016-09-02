@@ -17,13 +17,13 @@
 html, body { height: 100%; }
 nav { 
   position: absolute;
-  height: 100%; }
+  height: 100%;
+  overflow: scroll; }
 
 nav ul li { width: 100%; }
 
 .edit .side-menu.left { transform: translateX(-95%); }
-.edit .container.content {
-  transform: translateX(-25%); }
+.edit .container.content { transform: translateX(-25%); }
 .container, .side-menu { transition: all 350ms cubic-bezier(0.250, 0.100, 0.250, 1.000); }
 
 
@@ -33,30 +33,34 @@ nav ul li { width: 100%; }
   height: 8em;
   float: right; }
 
-.drop-zone { border: 10px dashed #ccc;
-        		 width: 300px;
-        		 min-height: 300px;
-        		 display: flex;
-    			   height: 100%;
-    			   justify-content: center; }
+.drop-zone { 
+  border: 10px dashed #ccc;
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  height: 100%;
+  justify-content: center; }
 
-footer { clear: all;
-    		 width: 100%;
-    		 margin: 1em; }
+footer {
+  clear: all;
+  width: 100%;
+  margin: 1em; }
 
 /** TYPOGRAPHY **/
-nav h1 {
-  font-family: 'Scope One', cursive;
-  margin-bottom: 0; }
-
+h1, h2, h3, h4, h5, h6 { font-family: 'Scope One', cursive; }
 .content h1,
 .content h2,
 .content h3,
 .content h4,
-.content h5 { margin-top: 0.2em; }
+.content h5 { 
+  margin-top: 0.3em;
+  margin-bottom: 0; }
+
+nav h1, nav h2, nav h3, nav h4 { font-family: 'Lato'; }
 
 
 .fa { padding: 0 0.5em }
 .drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
-footer { font-size: 0.8em;
-		     color: #d1d1d1; }
+footer {
+  font-size: 0.8em;
+  color: #d1d1d1; }

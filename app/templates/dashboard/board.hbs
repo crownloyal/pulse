@@ -1,4 +1,6 @@
-<h3>{{model.name}}</h3>
-<p>{{model.text}}</p>
+<div class="background-grey">
+	{{#link-to 'dashboard.board.edit' model.id}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
+	<h3>{{model.name}}</h3>
+	<p>{{model.text}}</p>
+</div>
 
-{{#link-to 'dashboard.board.edit' model.id}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
