@@ -1,8 +1,16 @@
 <menu class="side-menu right three columns">
 
-	{{input value=model.name}}
+	<div class="u-width-full">
+		<button class="one-half column">Save</button>
+		<button class="one-half column">Cancel</button>
+	</div>
 
-	{{input value=model.text}}
+	<hr>
+
+	<label for="dashboard-name">Dashboard name:</label>
+	{{input class="u-width-full" id="dashboard-name" value=model.name}}
+	<label for="dashboard-description">Description:</label>
+	{{input class="u-width-full" id="dashboard-description" value=model.text}}
 
 	<ul>
 		<li>Backup</li>

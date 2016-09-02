@@ -339,9 +339,9 @@ a {
   border: 0;
   height: 20px;
   border-radius: 3px;
-  line-height: 20px;
+/*  line-height: 20px;
   font-size: 0.65em;
-  padding: 1rem 4rem; }
+  padding: 1rem 4rem; those are weird */ }
   .btn.sharp, button.sharp, input[type="submit"].sharp, input[type="reset"].sharp, input[type="button"].sharp {
     border-radius: 0; }
   .btn:hover, .btn:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="button"]:hover, input[type="button"]:focus {
