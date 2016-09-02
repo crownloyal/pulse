@@ -45,10 +45,11 @@ export default function() {
 
  this.get('/accounts', function() {
     return { "account": [{ 
-      id: 1,
+      id: 'XC168SF86Y5',
       name: 'Dominic',
       lastname: 'Brause',
       email: 'dominic.brause@emc.com',
+      role: 'Administrator',
       image: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAhCAAAAJGUwMTBlMTc4LWQxN2MtNDQ1YS1iZGQ4LTg3NzNhYTVhNzViMw.jpg'}]
     };
   });

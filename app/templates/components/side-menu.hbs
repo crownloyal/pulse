@@ -2,7 +2,19 @@
 	<h1>{{#link-to 'index'}}Reports{{/link-to}}</h1>
 
 	<ul>
-		<li>{{#link-to 'account'}}{{fa-icon "fa-user"}}{{account.lastname}}{{/link-to}}</li>
+		{{#each account as |account|}}
+		<li class="menu-profile-container row">
+			{{#link-to 'account' account.id}}
+			<div class="one-third column profile-user-image u-pull-left">
+				<img class="" src="{{account.image}}">
+			</div>
+			<div class="two-thirds column">
+				{{account.name}} {{account.lastname}}<br>
+				{{account.role}}
+			</div>
+			{{/link-to}}
+		</li>
+		{{/each}}
 	</ul>
 
 	<ul>
