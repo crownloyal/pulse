@@ -1,18 +1,16 @@
-<div class="nine columns dashboard-wrapper">	
-	<h3>
-		{{#if model.name}}
-			{{model.name}}
-		{{else}}
-			Name of the Dashboard
-		{{/if}}
-	</h3>
-	<p>
-		{{#if model.text}}
-			{{model.text}}
-		{{else}}
-			Description.
-		{{/if}}
-	</p>
-	{{dashboard-drop}}
-	{{menu-graph-drag model=model}}
-</div>
+<h3>
+	{{#if model.name}}
+		{{model.name}}
+	{{else}}
+		Name of the Dashboard
+	{{/if}}
+</h3>
+<p>
+	{{#if model.text}}
+		{{model.text}}
+	{{else}}
+		Description.
+	{{/if}}
+</p>
+{{dashboard-drop}}
+{{menu-graph-drag model=model}}
