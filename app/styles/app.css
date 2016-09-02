@@ -1,5 +1,5 @@
 @import url('/assets/css/legacy.css');
-@import url(https://fonts.googleapis.com/css?family=Lato|Scope+One);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 /*!
 
@@ -64,7 +64,7 @@ footer {
   margin: 1em; }
 
 /** TYPOGRAPHY **/
-h1, h2, h3, h4, h5, h6 { font-family: 'Scope One', cursive; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; }
 .content h1,
 .content h2,
 .content h3,
