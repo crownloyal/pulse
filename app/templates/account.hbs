@@ -1,14 +1,14 @@
-<div class="two columns profile-user-image">
-	{{#if profile.image}}
+<div class="profile-user-image">
+	{{#if model.account.image}}
 		<img src="{{image}}">
 	{{else}}
 		<img src="http://lorempixel.com/200/200/people">
 	{{/if}}
 </div>
 <div class="five columns">
-	{{#if profile}}
-		<h4>{{name}} {{profile.lastname}}</h4>
-		<p>{{profile.email}}</p>
+	{{#if model.account}}
+		<h4>{{name}} {{account.lastname}}</h4>
+		<p>{{model.account.email}}</p>
 	{{else}}
 		<h4>Ooops!</h4>
 		<p>Couldn't load profile - are you logged in?</p>

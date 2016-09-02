@@ -43,8 +43,8 @@ export default function() {
     };
   });
 
- this.get('/profiles', function() {
-    return { "profile": [{ 
+ this.get('/accounts', function() {
+    return { "account": [{ 
       id: 1,
       name: 'Dominic',
       lastname: 'Brause',

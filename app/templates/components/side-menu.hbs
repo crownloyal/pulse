@@ -2,12 +2,12 @@
 	<h1>{{#link-to 'index'}}Reports{{/link-to}}</h1>
 
 	<ul>
-		<li>{{#link-to 'profile'}}{{fa-icon "fa-user"}}Profile{{/link-to}}</li>
+		<li>{{#link-to 'account'}}{{fa-icon "fa-user"}}Profile{{/link-to}}</li>
 	</ul>
 
 	<ul>
 		{{#each dashboard as |model|}}
-			<li>{{#link-to 'dashboard.board' model.id}}{{fa-icon 'fa-hashtag'}}{{model.name}}{{/link-to}}</li>
+			<li>{{#link-to 'dashboard.board' dashboard.id}}{{fa-icon 'fa-hashtag'}}{{model.dashboard.name}}{{/link-to}}</li>
 		{{/each}}
 		<li>{{#link-to 'dashboard.new'}}{{fa-icon 'fa-plus-circle'}}Add new dashboard{{/link-to}}</li>
 	</ul>

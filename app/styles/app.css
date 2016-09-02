@@ -25,10 +25,12 @@ nav {
 nav ul li { width: 100%; }
 nav ul li a::after {
     content: '■';
-    display: none; }
+    opacity: 0;
+    display: block;
+    transition: 0.2s ease-in; }
 nav ul li a.active::after {
-  float: right; 
-  display: block; }
+  float: right;
+  opacity: 1; }
 
 .edit .side-menu.left { transform: translateX(-85%); }
 .edit .container.content { transform: translateX(-25%); }

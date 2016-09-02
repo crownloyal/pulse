@@ -13,7 +13,7 @@ Router.map(function() {
     });
   });
   this.route('settings');
-  this.route('profile');
+  this.route('account');
 });
 
 export default Router;
