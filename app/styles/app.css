@@ -27,6 +27,7 @@ nav ul li a::after {
     content: '■';
     opacity: 0;
     display: block;
+
     transition: 0.2s ease-in; }
 nav ul li a.active::after {
   float: right;

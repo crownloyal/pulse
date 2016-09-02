@@ -1,17 +1,19 @@
-<div class="profile-user-image">
-	{{#if model.account.image}}
-		<img src="{{image}}">
-	{{else}}
-		<img src="http://lorempixel.com/200/200/people">
-	{{/if}}
-</div>
-<div class="five columns">
-	{{#if model.account}}
-		<h4>{{name}} {{account.lastname}}</h4>
-		<p>{{model.account.email}}</p>
-	{{else}}
-		<h4>Ooops!</h4>
-		<p>Couldn't load profile - are you logged in?</p>
-		<p class="warning">We're sorry - this shouldn't have happened!</p>
-	{{/if}}
+<div class="row">
+	<div class="profile-user-image two columns">
+		{{#if model.account.image}}
+			<img src="{{image}}">
+		{{else}}
+			<img src="http://lorempixel.com/200/200/people">
+		{{/if}}
+	</div>
+	<div class="five columns">
+		{{#if model.account}}
+			<h4>{{model.account.id}} {{account.lastname}}</h4>
+			<p>{{account}}</p>
+		{{else}}
+			<h4>Ooops!</h4>
+			<p>Couldn't load profile - are you logged in?</p>
+			<p class="warning">We're sorry - this shouldn't have happened!</p>
+		{{/if}}
+	</div>
 </div>
