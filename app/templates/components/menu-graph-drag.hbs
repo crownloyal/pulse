@@ -1,8 +1,8 @@
 <menu class="side-menu right three columns">
 
 	<div class="u-width-full">
-		<button class="one-half column">Save</button>
-		<button class="one-half column">Cancel</button>
+		{{#link-to 'dashboard.board' model.id class="btn one-half column"}}Save{{/link-to}}
+		{{#link-to 'dashboard.board' model.id class="btn one-half column"}}Cancel{{/link-to}}
 	</div>
 
 	<hr>
