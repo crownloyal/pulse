@@ -1,6 +1,12 @@
-<div class="background-grey">
-	<h3>{{model.name}}</h3>
-	<p>{{model.text}}</p>
+<div class="row">
+	<div class="eleven columns">
+		<h3>{{model.name}}</h3>
+		<p>{{model.text}}</p>
+	</div>
+
+	<div class="one columns edit-button">
+	{{#link-to 'dashboard.board.edit' model.id class="btn"}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
+	</div>
 </div>
 
 {{outlet}}

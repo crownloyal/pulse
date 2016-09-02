@@ -43,6 +43,7 @@ menu.side-menu.right {
   box-shadow: inset 2px 0px 6px 0px rgba(0,0,0,0.75);
   padding: 1em; }
 
+.edit .edit-button { display: none; }
 
 /* Content styles */
 .profile-user-image img {
