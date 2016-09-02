@@ -1,15 +1,5 @@
-<header>
-	<div class="container">
-		<h1 class="three columns">{{#link-to 'index'}}Reports{{/link-to}}</h1>
-		<menu class="nine columns" id="top-menu">
-			<ul>
-				<li>{{#link-to 'dashboard'}}{{fa-icon "fa-tachometer"}}Dashboard{{/link-to}}</li>
-				<li id="header-notification">{{fa-icon "fa-bell"}}Notifications</li>
-				<li>{{#link-to 'settings'}}{{fa-icon "fa-wrench"}}Settings{{/link-to}}</li>
-				<li>{{#link-to 'profile'}}{{fa-icon "fa-user"}}Profile{{/link-to}}</li>
-			</ul>
-		</menu>
-	</div>
-</header>
+{{side-menu dashboard=model}}
 
-{{outlet}}
+<div class="container content">
+	{{outlet}}		
+</div>

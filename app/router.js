@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('dashboard', function() {
     this.route('new');
     this.route('board', { path: '/:dashboard_id' }, function(){
-    	this.route('edit');
+        this.route('edit');
     });
   });
   this.route('settings');
