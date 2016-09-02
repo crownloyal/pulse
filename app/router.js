@@ -13,7 +13,9 @@ Router.map(function() {
     });
   });
   this.route('settings');
-  this.route('account', { path: 'account/:account_id' });
+  this.route('account', { path: 'account/:account_id' }, function() {
+  		this.route('settings');
+  });
 });
 
 export default Router;

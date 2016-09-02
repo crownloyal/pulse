@@ -1,14 +1,15 @@
 <div class="row">
 	<div class="profile-user-image two columns">
-			{{#if image}}
-				<img src="{{image}}">
+			{{#if model.image}}
+				<img src="{{model.image}}">
 			{{/if}}
 	</div>
 	<div class="five columns">
-			{{#if name}}
-				<h4>{{name}} {{lastname}}</h4>
-				<p>{{email}}</p>
-				<p>{{role}}</p>
+			{{#if model.name}}
+				<h4>{{model.name}} {{model.lastname}}</h4>
+				<p>{{model.email}}</p>
+				<br>
+				<p>{{model.role}}</p>
 			{{else}}
 				<h4>Ooops!</h4>
 				<p>Couldn't load profile - are you logged in?</p>
@@ -16,3 +17,11 @@
 			{{/if}}
 	</div>
 </div>
+
+<hr class="u-cf">
+
+<div class="link-list row">
+	{{link-to 'Settings' 'account.settings'}}
+</div>
+
+{{outlet}}

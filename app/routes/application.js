@@ -5,6 +5,6 @@ export default Ember.Route.extend({
 		return Ember.RSVP.hash({
 	      	dashboard: this.get('store').findAll('dashboard'),
 	      	account: this.get('store').findAll('account')
-		})
+		});
 	}
 });
