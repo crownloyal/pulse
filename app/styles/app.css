@@ -62,6 +62,24 @@ menu.side-menu.right input { width: 90%; }
   border-radius: 50%;
   height: 6em;
   margin-top: 8px; }
+.profile.profile-user-image img {
+  border-radius: 50%;
+  height: 10em;
+  margin: 0 auto; 
+
+  transition: height 0.2s ease-out;}
+@media(max-width: 960px){
+  .profile.profile-user-image img {
+    border-radius: 50%;
+    height: 8em;
+    margin: 0 auto; }
+}
+@media(max-width: 760px){
+  .profile.profile-user-image img {
+    border-radius: 50%;
+    height: 6em;
+    margin: 0 auto; }
+}
 
 .drop-zone { 
   border: 10px dashed #ccc;
