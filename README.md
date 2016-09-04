@@ -1,7 +1,13 @@
+[![Build Status](https://travis-ci.org/MrCrowned/ember-dashboard.svg?branch=UI-frame)](https://travis-ci.org/MrCrowned/ember-dashboard)
+
 # Ember-dashboard
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ember Dashboard gives you a simple boilerplate for your emberjs based dashboard.
+Simply hook up your APIs and you should be ready to go.
+
+## Usage
+
+Todo.
 
 ## Prerequisites
 
