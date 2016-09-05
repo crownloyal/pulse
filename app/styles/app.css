@@ -24,6 +24,13 @@ nav {
 @media(max-width: 550px) {
   nav {
     transform: translateX(-97%);
+    opacity: 0.1;
+    transition: opacity 300ms ease-in;
+  }
+
+  nav.menu-visible-active {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 

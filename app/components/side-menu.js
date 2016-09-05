@@ -2,12 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-	init() {
-		this._super(...arguments);
-		this.set('menuVisibility', false)
-	},
+	menuVisible: false,
 
 	toggleMenuVisibility(){
-		this.toggleProperty('menuVisibility');
+		this.toggleProperty('menuVisible');
 	}
 });
