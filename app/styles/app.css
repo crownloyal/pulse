@@ -23,7 +23,7 @@ nav {
   box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5); }
 @media(max-width: 550px) {
   nav {
-    height: 5em !important;
+    transform: translateX(-97%);
   }
 }
 
