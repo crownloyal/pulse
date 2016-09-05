@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import RecognizerMixin from 'ember-gestures/mixins/recognizers';
 
-const { Component } = Ember;
+const { $, Component } = Ember;
 
 export default Ember.Component.extend(RecognizerMixin, {
 
@@ -10,8 +10,12 @@ export default Ember.Component.extend(RecognizerMixin, {
 	toggleMenuVisibility(){
 		this.toggleProperty('menuVisible');
 	},
- 	tapStart(e) {
- 		toggleMenuVisibility();
+
+	click() {
+		this.toggleMenuVisibility();
+	},
+ 	swipe() {
+ 		this.toggleMenuVisibility();
  	},
 
 

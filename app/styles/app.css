@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Lato', sans-serif; }
 .content h2,
 .content h3,
 .content h4,
-.content h5 { 
+.content h5 {
   margin-top: 0.3em;
   margin-bottom: 0; }
 
@@ -131,3 +131,46 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 { font-family: 'Lato'; }
 
 .fa { padding: 0 0.5em }
 .drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
+
+/* Touch */
+.touch-zone::after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  position: absolute; }
+
+.touch-zone.active::after,
+.touch-zone:active::after {
+  transform: scale(1.25, 1.25); }
+
+.touch-zone:focus::after {
+  transform: scale(1.25, 1.25); }
+
+.touch-zone-left::after {
+  left: -10%;
+  width: 110%; }
+
+.touch-zone-right::after {
+  width: 110%; }
+
+.touch-zone-left.touch-zone-right::after {
+  width: 120%; }
+
+.touch-zone-top::after {
+  top: -10%;
+  height: 110%; }
+
+.touch-zone-bottom::after {
+  height: 110%; }
+
+.touch-zone-top.touch-zone-bottom::after {
+  height: 120%; }
+
+.touch-zone-all::after {
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%; }
