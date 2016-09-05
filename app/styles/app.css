@@ -117,7 +117,7 @@ menu.side-menu.right input { width: 90%; }
   .offset-by-three.column, .offset-by-three.columns { /* re-arrange content window */
     margin-left: 0;
   }
-  .edit-button { display: none; } /* No editing in mobile mode */
+  .edit-button, .mobile-ignore { display: none; } /* No editing in mobile mode */
 }
 
 .drop-zone {
