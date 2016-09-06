@@ -7,7 +7,10 @@ export default Ember.Component.extend({
 			model.rollbackAttributes();
 		},
 		saveChanges() {
-			model.save();
+			this.get('store').findRecord('dashboard', param.dashboard_id).then(function(data){
+				data.set('title', model.name);
+				data.set('text', model.text);
+			})
 		}
 
 	}
