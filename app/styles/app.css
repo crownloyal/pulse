@@ -100,6 +100,11 @@ menu.side-menu.right input { width: 90%; }
 
   transition: height 0.2s ease-out;}
 
+@media(max-width: 550px) {
+  .account .row > .profile-user-image,
+  .account .row > .five.columns { text-align: center; }
+}
+
 /* Responsive hooks */
 @media(max-width: 960px){
   .profile.profile-user-image img {
