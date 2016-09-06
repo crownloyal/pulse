@@ -22,7 +22,7 @@
 		{{#each dashboard as |dashboard|}}
 			<li>{{#link-to 'dashboard.board' dashboard.id}}{{fa-icon 'fa-hashtag'}}{{dashboard.name}}{{/link-to}}</li>
 		{{/each}}
-		<li>{{#link-to 'dashboard.new' class="mobile-ignore"}}{{fa-icon 'fa-plus-circle'}}Add new dashboard{{/link-to}}</li>
+		<li>{{#link-to 'dashboard.new' class="utility hide-on-phones"}}{{fa-icon 'fa-plus-circle'}}Add new dashboard{{/link-to}}</li>
 	</ul>
 
 	<ul id="navigation-links">

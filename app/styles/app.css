@@ -16,12 +16,12 @@
 /* menu */
 html, body { height: 100%; } /* getting full height */
 nav {
-  position: absolute;
+  position: fixed;
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5); }
-@media(max-width: 550px) {
+@media(max-width: 550px) {        /* Mobile navigation */
   nav {
     transform: translateX(-97%);
     opacity: 0.8;
@@ -117,7 +117,6 @@ menu.side-menu.right input { width: 90%; }
   .offset-by-three.column, .offset-by-three.columns { /* re-arrange content window */
     margin-left: 0;
   }
-  .edit-button, .mobile-ignore { display: none; } /* No editing in mobile mode */
 }
 
 .drop-zone {
@@ -142,8 +141,7 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 { font-family: 'Lato'; }
 @media(max-width: 550px) {
   nav h1 {
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 0;
+    position: static;
     width: 100%;
   }
 }
