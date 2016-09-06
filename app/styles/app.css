@@ -42,11 +42,9 @@ nav button#nav-close-button {
 
   position: absolute;
   top: 4%;
-  right: 1em;
-  }
+  right: 1em; }
 
 nav ul li { width: 100%; }
-nav ul li .active { background-color: #404a59; }
 
 nav li.menu-profile-container {
   display: inline-block;
@@ -54,6 +52,11 @@ nav li.menu-profile-container {
 nav li.menu-profile-container a { line-height: 45px; }
 @media(max-width: 1350px) {
   nav li.menu-profile-container img { display: none; } /* hiding profile image */
+}
+@media(max-width: 550px) {
+  nav li.menu-profile-container .profile-user-image { width: 30%; }
+  nav li.menu-profile-container .two-thirds.column { width: 70%; }
+  nav li.menu-profile-container img { display: block; }
 }
 
 .edit .side-menu.left { transform: translateX(-85%); }

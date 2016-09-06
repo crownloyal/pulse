@@ -13,20 +13,21 @@ translatedRoute: Ember.computed('this.appCtrl', function() {
 	Ember.Logger.info('Current route: ', currentRoute)
 
 	switch(currentRoute) {
-		case ('account.index' || 'account.settings'):
+		case 'account.index':
+		case 'account.settings':
 			return 'Account';
 			break;
-		case ('dashboard.index'):
+		case 'dashboard.index':
 			return 'Dashboard help';
 			break;
-		case ('dashboard.board.index'):
+		case 'dashboard.board.index':
 			return 'Dashboard';
 			break;
-		case ('settings'):
+		case 'settings':
 			return 'App settings';
 			break;
-		case ('about'):
-			return 'About <i>this</i>';
+		case 'about':
+			return 'About (this)';
 			break;
 
 		default:

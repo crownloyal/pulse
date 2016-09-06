@@ -12,6 +12,7 @@ Router.map(function() {
         this.route('edit');
     });
   });
+  this.route('about');
   this.route('settings');
   this.route('account', { path: 'account/:account_id' }, function() {
   		this.route('settings');
