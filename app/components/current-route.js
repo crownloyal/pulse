@@ -10,7 +10,6 @@ init() {
 
 translatedRoute: Ember.computed('this.appCtrl', function() {
 	let currentRoute = this.appCtrl.currentRouteName;
-	Ember.Logger.info('Current route: ', currentRoute);
 
 	switch(currentRoute) {
 		case 'account.index':
@@ -26,9 +25,10 @@ translatedRoute: Ember.computed('this.appCtrl', function() {
 			return 'About (this)';
 
 		default:
+			Ember.Logger.debug(currentRoute);
 			return 'Oooops!';
 			}
 
-		}).property('appCtrl')
+		}).property('appCtrl.currentRouteName')
 
 });
