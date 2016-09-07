@@ -24,7 +24,7 @@ nav {
 @media(max-width: 550px) {        /* Mobile navigation */
   nav {
     transform: translateX(-97%);
-    opacity: 0.8;
+    opacity: 0.7;
     transition: opacity 300ms ease-in;
   }
 
@@ -32,17 +32,6 @@ nav {
     transform: translateX(0%);
     opacity: 1;
   }
-
-  nav.menu-visible-active button#nav-close-button {
-    display: block; }
-}
-
-nav button#nav-close-button {
-  display: none;
-
-  position: absolute;
-  top: 4%;
-  right: 1em; }
 
 nav ul li { width: 100%; }
 
