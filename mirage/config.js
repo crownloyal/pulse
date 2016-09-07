@@ -50,6 +50,7 @@ export default function() {
       lastname: 'Brause',
       email: 'dominic.brause@emc.com',
       role: 'Administrator',
+      partnername: 'Mozy Inc',
       image: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAhCAAAAJGUwMTBlMTc4LWQxN2MtNDQ1YS1iZGQ4LTg3NzNhYTVhNzViMw.jpg'}]
     };
   });

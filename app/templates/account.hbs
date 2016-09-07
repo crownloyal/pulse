@@ -9,7 +9,7 @@
 				<h4>{{model.name}} {{model.lastname}}</h4>
 				<p>{{model.email}}</p>
 				<br>
-				<p>{{model.role}}</p>
+				<p>{{model.role}} - <b>{{model.partnername}}</b></p>
 			{{else}}
 				<h4>Ooops!</h4>
 				<p>Couldn't load profile - are you logged in?</p>
@@ -20,7 +20,7 @@
 
 <hr class="u-cf">
 
-<div class="link-list row">
+<div class="link-list row profile-sub-links">
 	{{link-to 'Account settings' 'account.settings'}}
 	<a href="#">Some other link</a>
 	<a href="#">More links</a>
