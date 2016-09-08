@@ -1,9 +1,11 @@
 <hr>
 
 <div class="row">
-	<div class="six columns">
-		<div class="drop-zone">
-			<h5>+ drop stuff here</h5>
-		</div>
+	<div class="eleven columns">
+		{{#draggable-object-target action="addToList" dragOverAction='dropzoneHover' dragOutAction='removeFromList'}}
+			<div class="drop-zone">
+				<p>+ Drop stuff here</p>
+			</div>
+		{{/draggable-object-target}}
 	</div>
 </div>
