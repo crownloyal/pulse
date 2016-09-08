@@ -10,6 +10,7 @@
     "Faker": "~3.1.0",
     "normalize-css": "^4.2.0",
     "hammer.js": "2.0.6",
-    "hammer-time": "1.0.0"
+    "hammer-time": "1.0.0",
+    "chartjs": "2.1.6"
   }
 }
