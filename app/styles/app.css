@@ -114,6 +114,7 @@ menu .draggable-object:focus,
 menu .draggable-object:hover { box-shadow: 3px 3px 11px 0px; }
 /*menu .draggable-object input[type=checkbox]{ visibility: hidden; }*/
 
+.edit-button .btn { padding-right: 0; } /* Button scroll fix */
 .edit .edit-button { display: none; } /* Hide edit button when editing */
 
 /* Content styles */
