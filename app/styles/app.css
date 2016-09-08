@@ -98,6 +98,10 @@ menu.side-menu.right {
 menu.side-menu.right input { width: 90%; }
 .new menu.side-menu.right { right: 0; }
 
+menu .draggable-object input[type=checkbox]{ 
+  visibility: hidden;
+}
+
 .edit .edit-button { display: none; } /* Hide edit button when editing */
 
 /* Content styles */

@@ -10,8 +10,7 @@
 	<label for="dashboard-description">Description:</label>
 	{{input class="u-width-full" id="dashboard-description" value=model.text}}
 
-	<ul>
-		<li>Backup</li>
-		<li>Finance</li>
-	</ul>
+		{{#draggable-object content=this}}<input type="checkbox" name="backup-health">Backup Health{{/draggable-object}}
+		{{#draggable-object content=this}}<input type="checkbox" name="error-rates">Error rates{{/draggable-object}}
+		{{#draggable-object content=this}}<input type="checkbox" name="finance">Finance{{/draggable-object}}
 </menu>
