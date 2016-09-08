@@ -15,10 +15,16 @@ translatedRoute: Ember.computed('this.appCtrl', function() {
 		case 'account.index':
 		case 'account.settings':
 			return 'Account';
+
 		case 'dashboard.index':
 			return 'Dashboard help';
+		case 'dashboard.new':
+			return 'New dashboard';
 		case 'dashboard.board.index':
 			return 'Dashboard';
+		case 'dashboard.board.edit':
+			return 'Edit dashboard'
+
 		case 'settings':
 			return 'App settings';
 		case 'about':
