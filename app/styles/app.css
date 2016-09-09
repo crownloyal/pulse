@@ -112,7 +112,10 @@ menu .draggable-object {
   transition: box-shadow 200ms ease-in; }
 menu .draggable-object:focus,
 menu .draggable-object:hover { box-shadow: 3px 3px 11px 0px; }
-/*menu .draggable-object input[type=checkbox]{ visibility: hidden; }*/
+.accepts-drag .drop-zone {
+  border-color: #41b497;
+  height: 80px; }
+.accepts-drag .drop-zone > p { color: #444F5F; }
 
 .edit-button .btn { padding-right: 0; } /* Button scroll fix */
 .edit .edit-button { display: none; } /* Hide edit button when editing */
@@ -153,10 +156,12 @@ menu .draggable-object:hover { box-shadow: 3px 3px 11px 0px; }
   height: 50px;
   display: flex;
   line-height: 50px;
-  justify-content: center; }
+  justify-content: center; 
+  transition: 0.2s ease-in; }
 .drop-zone > p {
   margin: 0 auto;
   color: #d1d1d1;
+  transition: font-weight 0.2s ease-in;
 }
 
 input { margin-bottom: 1em; }

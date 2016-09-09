@@ -33,7 +33,7 @@ translatedRoute: Ember.computed('this.appCtrl', function() {
 		default:
 			Ember.Logger.debug(currentRoute);
 			return 'Oooops!';
-			}
+			};
 
 		}).property('appCtrl.currentRouteName')
 
