@@ -117,6 +117,8 @@ menu .draggable-object:hover { box-shadow: 3px 3px 11px 0px; }
   height: 80px; }
 .accepts-drag .drop-zone > p { color: #444F5F; }
 
+.new .drop-zone { width: 55%; }
+
 .edit-button .btn { padding-right: 0; } /* Button scroll fix */
 .edit .edit-button { display: none; } /* Hide edit button when editing */
 
