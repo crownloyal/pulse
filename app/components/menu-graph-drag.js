@@ -4,13 +4,13 @@ export default Ember.Component.extend({
 
 	actions: {
 		cancelChanges() {
-			model.rollbackAttributes();
+			this.get('model').rollbackAttributes();
 		},
 		saveChanges() {
-			this.get('store').findRecord('dashboard', param.dashboard_id).then(function(data){
-				data.set('title', model.name);
-				data.set('text', model.text);
-			})
+			this.get('model').findRecord('dashboard', param.dashboard_id).then(function(data){
+				this.set('title', model.name);
+				this.set('text', model.text);
+			});
 		}
 
 	}

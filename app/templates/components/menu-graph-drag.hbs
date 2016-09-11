@@ -11,15 +11,15 @@
 	{{input class="u-width-full" id="dashboard-description" value=model.text}}
 
 		{{#draggable-object content=this}}
-			<input type="checkbox" name="backup health" id="backup-health">
+			{{input type="checkbox" name="backup health" id="backup-health"}}
 			<label for="backup-health">Backup Health</label>
 		{{/draggable-object}}
 		{{#draggable-object content=this}}
-			<input type="checkbox" name="error rates" id="error-rates">
+			{{input type="checkbox" name="error rates" id="error-rates"}}
 			<label for="error-rates">Error rates</label>
 		{{/draggable-object}}
 		{{#draggable-object content=this}}
-			<input type="checkbox" name="finance" id="finance">
+			{{input type="checkbox" name="finance" id="finance"}}
 			<label for="finance">Finance</label>
 		{{/draggable-object}}
 </menu>
