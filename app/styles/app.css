@@ -187,6 +187,36 @@ button, .btn { padding: 1em 2.5em; }
 .fa { padding: 0 0.5em }
 .drop-zone h1, .drop-zone h2, .drop-zone h3, .drop-zone h4, .drop-zone h5, .drop-zone h6 { margin: 0 auto; }
 
+/* PULSE ANIMATION */
+.pulse {
+ -webkit-animation: color_change 1s ease-out infinite alternate;
+ -moz-animation: color_change 1s ease-out infinite alternate;
+ -ms-animation: color_change 1s ease-out infinite alternate;
+ -o-animation: color_change 1s ease-out infinite alternate;
+ animation: color_change 1s ease-out infinite alternate;
+}
+
+@-webkit-keyframes color_change {
+ from { color: #303a49; }
+ to { color: #444F5F; }
+}
+@-moz-keyframes color_change {
+ from { color: #303a49; }
+ to { color: #444F5F; }
+}
+@-ms-keyframes color_change {
+ from { color: #303a49; }
+ to { color: #444F5F; }
+}
+@-o-keyframes color_change {
+ from { color: #303a49; }
+ to { color: #444F5F; }
+}
+@keyframes color_change {
+ from { color: #303a49; }
+ to { color: #444F5F; }
+}
+
 /* Touch */
 .touch-zone::after {
   content: ' ';
