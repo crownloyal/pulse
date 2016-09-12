@@ -31,7 +31,14 @@ export default function() {
     return { "dashboard": [{ 
       id: 1,
       name: 'Dashboard #1',
-      text: 'Yadda yadda yadda.'}]
+      text: 'Yadda yadda yadda.',
+      display: {
+        "backup-health": "1",
+        "error-rates": "0",
+        "finance": "0"
+        }
+
+      }]
     };
   });
 
@@ -39,7 +46,13 @@ export default function() {
     return { "dashboard": [{ 
       id: 2,
       name: 'Dashboard #2',
-      text: 'Yeah yeah yeah.'}]
+      text: 'Yeah yeah yeah.',
+      display: {
+        "backup-health": 0,
+        "error-rates": 0,
+        "finance": 1
+        }
+      }]
     };
   });
 

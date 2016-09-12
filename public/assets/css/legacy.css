@@ -337,10 +337,10 @@ a {
   margin: 0 0 1rem 0;
   font-family: "Helvetica Neue", "Roboto", sans-serif;
   border: 0;
-  height: 20px;
   border-radius: 3px;
-/*  line-height: 20px;
-  font-size: 0.65em;
+  line-height: 20px;
+/*  font-size: 0.65em;
+  height: 20px;
   padding: 1rem 4rem; those are weird */ }
   .btn.sharp, button.sharp, input[type="submit"].sharp, input[type="reset"].sharp, input[type="button"].sharp {
     border-radius: 0; }

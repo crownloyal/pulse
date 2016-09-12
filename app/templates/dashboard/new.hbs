@@ -1,19 +1,22 @@
-<h3>
-	{{#if model.name}}
-		{{model.name}}
-	{{else}}
-		Name of the Dashboard
-	{{/if}}
-</h3>
-<p>
-	{{#if model.text}}
-		{{model.text}}
-	{{else}}
-		Description.
-	{{/if}}
-</p>
+<div class="row">
+	<div class="six columns">
+		<h3>
+			{{#if model.name}}
+				{{model.name}}
+			{{else}}
+				Name of the Dashboard
+			{{/if}}
+		</h3>
+		<p>
+			{{#if model.text}}
+				{{model.text}}
+			{{else}}
+				Description.
+			{{/if}}
+		</p>
 
-{{dashboard-drop}}
-
+		{{dashboard-drop}}
+	</div>
+</div>
 
 {{menu-graph-drag model=model}}

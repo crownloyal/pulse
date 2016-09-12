@@ -1,19 +1,25 @@
-<menu class="side-menu right three columns">
+<menu class="side-menu right four columns">
 
 	<div class="u-width-full">
 		{{#link-to 'dashboard.board' model.id class="btn one-half column"}}Save{{/link-to}}
 		{{#link-to 'dashboard.board' model.id class="btn one-half column warning"}}Cancel{{/link-to}}
 	</div>
 
-	<hr class="u-cf">
-
 	<label for="dashboard-name">Dashboard name:</label>
 	{{input class="u-width-full" id="dashboard-name" value=model.name}}
 	<label for="dashboard-description">Description:</label>
 	{{input class="u-width-full" id="dashboard-description" value=model.text}}
 
-	<ul>
-		<li>Backup</li>
-		<li>Finance</li>
-	</ul>
+		{{#draggable-object content=this}}
+			{{input type="checkbox" name="backup health" id="backup-health"}}
+			<label for="backup-health">Backup Health</label>
+		{{/draggable-object}}
+		{{#draggable-object content=this}}
+			{{input type="checkbox" name="error rates" id="error-rates"}}
+			<label for="error-rates">Error rates</label>
+		{{/draggable-object}}
+		{{#draggable-object content=this}}
+			{{input type="checkbox" name="finance" id="finance"}}
+			<label for="finance">Finance</label>
+		{{/draggable-object}}
 </menu>
