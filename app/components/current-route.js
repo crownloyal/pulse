@@ -23,7 +23,7 @@ translatedRoute: Ember.computed('this.appCtrl', function() {
 		case 'dashboard.board.index':
 			return 'Dashboard';
 		case 'dashboard.board.edit':
-			return 'Edit dashboard'
+			return 'Edit dashboard';
 
 		case 'settings':
 			return 'App settings';
