@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-dashboard',
+    modulePrefix: 'pulse',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

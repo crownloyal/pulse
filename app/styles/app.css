@@ -189,11 +189,11 @@ button, .btn { padding: 1em 2.5em; }
 
 /* PULSE ANIMATION */
 .pulse {
- -webkit-animation: color_change 1s ease-out infinite alternate;
- -moz-animation: color_change 1s ease-out infinite alternate;
- -ms-animation: color_change 1s ease-out infinite alternate;
- -o-animation: color_change 1s ease-out infinite alternate;
- animation: color_change 1s ease-out infinite alternate;
+ -webkit-animation: color_change .7s ease-out infinite alternate;
+ -moz-animation: color_change .7s ease-out infinite alternate;
+ -ms-animation: color_change .7s ease-out infinite alternate;
+ -o-animation: color_change .7s ease-out infinite alternate;
+ animation: color_change .7s ease-out infinite alternate;
 }
 
 @-webkit-keyframes color_change {

@@ -1,13 +1,17 @@
 [![Build Status](https://travis-ci.org/MrCrowned/ember-dashboard.svg?branch=UI-frame)](https://travis-ci.org/MrCrowned/ember-dashboard)
 
-# Ember-dashboard
+# Pulse
 
 Ember Dashboard gives you a simple boilerplate for your emberjs based dashboard.
 Simply hook up your APIs and you should be ready to go.
 
 ## Usage
 
-Todo.
+Pulse requires 2 API endpoints
+
+* /auth/ or /accounts/
+* /dashboards/
+* /dashboards/:id
 
 ## Prerequisites
 
@@ -21,33 +25,10 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone pulse` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 

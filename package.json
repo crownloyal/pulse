@@ -1,7 +1,7 @@
 {
-  "name": "ember-dashboard",
-  "version": "0.3.0",
-  "description": "An analytics dashboard template.",
+  "name": "pulse",
+  "version": "0.4.0",
+  "description": "A plug-and-play dashboard.",
   "private": true,
   "directories": {
     "doc": "doc",
