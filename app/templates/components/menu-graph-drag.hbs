@@ -1,9 +1,6 @@
 <menu class="side-menu right four columns">
 
-	<div class="u-width-full">
-		{{#link-to 'dashboard.board' model.id class="btn one-half column"}}Save{{/link-to}}
-		{{#link-to 'dashboard.board' model.id class="btn one-half column warning"}}Cancel{{/link-to}}
-	</div>
+	{{yield}}
 
 	<label for="dashboard-name">Dashboard name:</label>
 	{{input class="u-width-full" id="dashboard-name" value=model.name}}

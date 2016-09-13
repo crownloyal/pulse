@@ -1,17 +1,24 @@
 import Ember from 'ember';
-import DS from 'ember-data';
 
 export default Ember.Component.extend({
 
 	actions: {
-		cancelChanges() {
+		createNewDashboard(){},
+
+		rollbackDashboardChanges() {
 			this.get('store').rollbackAttributes();
 		},
-		saveChanges() {
-			this.get('store').findRecord('dashboard', param.dashboard_id).then(function(data){
-				this.set('title', model.name);
-				this.set('text', model.text);
-			});
+		saveDashboardChanges(id) {
+			this.get('store').findRecord('dashboard', id)
+				.then(function(){
+					this.set('name', this.get('model.name'));
+					this.set('text', this.get('model.text'));
+				});
+			record.save().then(function() {
+				Ember.Logger.debug('Record saved successfully!');
+			}, function() {
+				Ember.Logger.debug('Saving record failed!');
+			})
 		}
 
 	}

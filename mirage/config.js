@@ -42,6 +42,10 @@ export default function() {
     };
   });
 
+ this.patch('dashboards/1'), function() {
+    return 'OK 200';
+ }
+
  this.get('/dashboards/2', function() {
     return { "dashboard": [{ 
       id: 2,

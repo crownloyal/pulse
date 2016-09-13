@@ -19,4 +19,9 @@
 	</div>
 </div>
 
-{{menu-graph-drag model=model}}
+{{#menu-graph-drag model=model}}
+	<div class="u-width-full">
+		{{#link-to 'dashboard.board' model.id class="btn one-half column" invokeAction="createNewDashboard"}}Create{{/link-to}}
+		<button type="Reset" class="btn one-half column warning">Reset Form</button>
+	</div>
+{{/menu-graph-drag}}

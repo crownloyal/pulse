@@ -44,6 +44,7 @@
     "ember-gestures": "0.4.2",
     "ember-getowner-polyfill": "1.0.1",
     "ember-hammertime": "1.0.0",
+    "ember-link-action": "0.0.35",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "loader.js": "^4.0.1"
