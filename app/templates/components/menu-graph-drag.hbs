@@ -9,11 +9,12 @@
 
 	{{#each-in model.display as |key value|}}
 		{{#draggable-object content=this}}
-			{{input type="checkbox" name=key id=key checked=value}}
+			{{input type="checkbox" name=key id=key checked=value click=(action "changeDashboardSelection")}}
 			<label for={{key}}>{{key}}</label>
 		{{/draggable-object}}
 	{{else}}
-		No pulse graphs available.
+		No pulse graphs selected.
+		Select one in the {{#link-to 'dashboard.board.edit' model.id}}Edit menu{{/link-to}}.
 	{{/each-in}}
 
 		{{!-- 

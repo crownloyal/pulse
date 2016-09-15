@@ -32,11 +32,11 @@ export default function() {
       id: 1,
       name: 'Backup Performance',
       text: 'Yadda yadda yadda.',
-      display: {
-        "backup-health": 1,
-        "error-rates": 0,
-        "finance": 0
-        }
+      display: [
+        { "name" : "backup-health", "status" : 1 },
+        { "name" : "error-rates", "status" : 0 },
+        { "name" : "finance", "status" : 0 } 
+    ]
 
       }]
     };

@@ -10,3 +10,13 @@
 </div>
 
 {{outlet}}
+
+<section class="dashboard-display">
+	{{#each-in model.display as |key value|}}
+		{{#if value}}
+			Display pulse component: <b>{{key}}</b>
+		{{/if}}
+	{{else}}
+		No graphs to display
+	{{/each-in}}
+</section>
