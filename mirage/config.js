@@ -36,7 +36,7 @@ export default function() {
         { "name" : "backup-health", "status" : 1 },
         { "name" : "error-rates", "status" : 0 },
         { "name" : "finance", "status" : 0 } 
-    ]
+      ]
 
       }]
     };
