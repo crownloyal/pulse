@@ -5,11 +5,11 @@ export default Ember.Component.extend({
 	store: Ember.inject.service(),
 
 	actions: {
-		createNewDashboard(){
+		userCreatedNewDashboard(){
 			this.get('store').createRecord('dashboard');
 		},
 
-		rollbackDashboardChanges() {
+		userRolledbackDashboardChanges: function() {
 			this.get('store').rollbackAttributes();
 		},
 		saveDashboardChanges() {
@@ -23,7 +23,7 @@ export default Ember.Component.extend({
 				Ember.Logger.debug('Record saved successfully!');
 			}, function() {
 				Ember.Logger.debug('Saving record failed!');
-			})
+			});
 		}
 
 	}

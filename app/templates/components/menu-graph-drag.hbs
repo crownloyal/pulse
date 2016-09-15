@@ -7,16 +7,29 @@
 	<label for="dashboard-description">Description:</label>
 	{{input class="u-width-full" id="dashboard-description" value=model.text}}
 
+	{{#each-in model.display as |key value|}}
 		{{#draggable-object content=this}}
-			{{input type="checkbox" name="backup health" id="backup-health"}}
+			{{input type="checkbox" name=key id=key checked=value}}
+			<label for={{key}}>{{key}}</label>
+		{{/draggable-object}}
+	{{else}}
+		No pulse graphs available.
+	{{/each-in}}
+
+		{{!-- 
+		
+		Above should render as follows:
+			
+		{{#draggable-object content=this}}
+			{{input type="checkbox" name="backup health" id="backup-health" checked=model.display.backup-health}}
 			<label for="backup-health">Backup Health</label>
 		{{/draggable-object}}
 		{{#draggable-object content=this}}
-			{{input type="checkbox" name="error rates" id="error-rates"}}
+			{{input type="checkbox" name="error rates" id="error-rates" checked=model.display.error-rates}}
 			<label for="error-rates">Error rates</label>
 		{{/draggable-object}}
 		{{#draggable-object content=this}}
-			{{input type="checkbox" name="finance" id="finance"}}
+			{{input type="checkbox" name="finance" id="finance" checked=model.display.finance}}
 			<label for="finance">Finance</label>
-		{{/draggable-object}}
+		{{/draggable-object}} --}}
 </menu>

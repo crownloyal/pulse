@@ -2,7 +2,7 @@
 
 {{#menu-graph-drag model=model}}
 	<div class="u-width-full">
-		{{#link-to 'dashboard.board' model.id class="btn one-half column" invokeAction="saveDashboardChanges"}}Save{{/link-to}}
-		{{#link-to 'dashboard.board' model.id class="btn one-half column warning" invokeAction="rollbackDashboardChanges"}}Cancel{{/link-to}}
+		{{#link-to 'dashboard.board' model.id class="btn one-half column"}}Save{{/link-to}}
+		{{#link-to 'dashboard.board' model.id class="btn one-half column warning" invokeAction="userRolledbackDashboardChanges"}}Cancel{{/link-to}}
 	</div>
 {{/menu-graph-drag}}

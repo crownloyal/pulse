@@ -30,27 +30,23 @@ export default function() {
  this.get('/dashboards/1', function() {
     return { "dashboard": [{ 
       id: 1,
-      name: 'Dashboard #1',
+      name: 'Backup Performance',
       text: 'Yadda yadda yadda.',
       display: {
-        "backup-health": "1",
-        "error-rates": "0",
-        "finance": "0"
+        "backup-health": 1,
+        "error-rates": 0,
+        "finance": 0
         }
 
       }]
     };
   });
 
- this.patch('dashboards/1'), function() {
-    return 'OK 200';
- }
-
  this.get('/dashboards/2', function() {
     return { "dashboard": [{ 
       id: 2,
-      name: 'Dashboard #2',
-      text: 'Yeah yeah yeah.',
+      name: 'Finance',
+      text: 'Yeah yeah yeah. $$$',
       display: {
         "backup-health": 0,
         "error-rates": 0,
@@ -59,6 +55,21 @@ export default function() {
       }]
     };
   });
+
+  this.get('/dashboards/3', function() {
+      return { "dashboard": [{ 
+        id: 3,
+        name: 'Additional Dashboard',
+        text: 'Ohhhhh wow.',
+        display: {
+          "backup-health": 1,
+          "error-rates": 1,
+          "finance": 0
+          }
+        }]
+      };
+    });
+
 
  this.get('/accounts', function() {
     return { "account": [{ 
