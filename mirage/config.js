@@ -33,9 +33,9 @@ export default function() {
       name: 'Backup Performance',
       text: 'Yadda yadda yadda.',
       displays: [
-        { "name" : "backup-health", "status" : 1 },
-        { "name" : "error-rates", "status" : 0 },
-        { "name" : "finance", "status" : 0 } 
+        { "name" : "Backup Health", "key" : "backup-health", "status" : 1 },
+        { "name" : "Error rates", "key" : "error-rates", "status" : 0 },
+        { "name" : "Finance" ,"key" : "finance", "status" : 0 } 
       ]
 
       }]
@@ -48,9 +48,9 @@ export default function() {
       name: 'Finance',
       text: 'Yeah yeah yeah. $$$',
       displays: [
-        { "name" : "backup-health", "status" : 1 },
-        { "name" : "error-rates", "status" : 1 },
-        { "name" : "finance", "status" : 0 } 
+        { "name" : "Backup Health", "key" : "backup-health", "status" : 1 },
+        { "name" : "Error rates", "key" : "error-rates", "status" : 1 },
+        { "name" : "Finance" ,"key" : "finance", "status" : 0 } 
       ]
 
       }]
@@ -63,9 +63,9 @@ export default function() {
         name: 'Additional Dashboard',
         text: 'Ohhhhh wow.',
         displays: [
-          { "name" : "backup-health", "status" : 0 },
-          { "name" : "error-rates", "status" : 0 },
-          { "name" : "finance", "status" : 1 } 
+        { "name" : "Backup Health", "key" : "backup-health", "status" : 0 },
+        { "name" : "Error rates", "key" : "error-rates", "status" : 0 },
+        { "name" : "Finance" ,"key" : "finance", "status" : 1 } 
         ]
 
       }]

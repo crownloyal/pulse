@@ -1,26 +1,26 @@
 <div class="row">
 	<div class="eleven columns">
-		<h3>{{model.dashboard.name}}</h3>
-		<p>{{model.dashboard.text}}</p>
+		<h3>{{model.name}}</h3>
+		<p>{{model.text}}</p>
 	</div>
 
 	<div class="one columns edit-button">
-	{{#link-to 'dashboard.board.edit' model.dashboard.id class="btn utility hide-on-phones"}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
+	{{#link-to 'dashboard.board.edit' model.id class="btn utility hide-on-phones"}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
 	</div>
 </div>
 
 {{outlet}}
 
 <section class="dashboard-display">
-	{{#each model.display as |display|}}
 
-		<b>Name: {{display.name}}</b> --
-		Status: {{display.status}}
+	{{#each-in model.displays as |index value|}}
+
+		<b>Name: {{value.name}}</b> --
+		Status: {{value.status}}
 		<br>
 
 	{{else}}
-		No graphs to display
-	{{/each}}
+		No graphs selected.
+	{{/each-in}}
 
-	{{log 'Display: ' model.display}}
 </section>
