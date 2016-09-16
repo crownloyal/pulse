@@ -1,22 +1,26 @@
 <div class="row">
 	<div class="eleven columns">
-		<h3>{{model.name}}</h3>
-		<p>{{model.text}}</p>
+		<h3>{{model.dashboard.name}}</h3>
+		<p>{{model.dashboard.text}}</p>
 	</div>
 
 	<div class="one columns edit-button">
-	{{#link-to 'dashboard.board.edit' model.id class="btn utility hide-on-phones"}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
+	{{#link-to 'dashboard.board.edit' model.dashboard.id class="btn utility hide-on-phones"}}{{fa-icon "fa-pencil"}}Edit{{/link-to}}
 	</div>
 </div>
 
 {{outlet}}
 
 <section class="dashboard-display">
-	{{#each-in model.display as |key value|}}
-		{{#if value}}
-			Display pulse component: <b>{{key}}</b>
-		{{/if}}
+	{{#each model.display as |display|}}
+
+		<b>Name: {{display.name}}</b> --
+		Status: {{display.status}}
+		<br>
+
 	{{else}}
 		No graphs to display
-	{{/each-in}}
+	{{/each}}
+
+	{{log 'Display: ' model.display}}
 </section>

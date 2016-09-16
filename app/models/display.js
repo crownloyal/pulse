@@ -1,7 +1,7 @@
 import DS from 'ember-data';
-import MF from 'model-fragments';
+import Fragment from 'model-fragments/fragment';
 
-export default MF.Fragment.extend({
+export default Fragment.extend({
   name: DS.attr('string'),
   status: DS.attr('boolean')
 });

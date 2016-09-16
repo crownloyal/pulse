@@ -32,7 +32,7 @@ export default function() {
       id: 1,
       name: 'Backup Performance',
       text: 'Yadda yadda yadda.',
-      display: [
+      displays: [
         { "name" : "backup-health", "status" : 1 },
         { "name" : "error-rates", "status" : 0 },
         { "name" : "finance", "status" : 0 } 
@@ -47,28 +47,30 @@ export default function() {
       id: 2,
       name: 'Finance',
       text: 'Yeah yeah yeah. $$$',
-      display: {
-        "backup-health": 0,
-        "error-rates": 0,
-        "finance": 1
-        }
+      displays: [
+        { "name" : "backup-health", "status" : 1 },
+        { "name" : "error-rates", "status" : 1 },
+        { "name" : "finance", "status" : 0 } 
+      ]
+
       }]
-    };
-  });
+      }
+    });
 
   this.get('/dashboards/3', function() {
       return { "dashboard": [{ 
         id: 3,
         name: 'Additional Dashboard',
         text: 'Ohhhhh wow.',
-        display: {
-          "backup-health": 1,
-          "error-rates": 1,
-          "finance": 0
-          }
-        }]
-      };
-    });
+        displays: [
+          { "name" : "backup-health", "status" : 0 },
+          { "name" : "error-rates", "status" : 0 },
+          { "name" : "finance", "status" : 1 } 
+        ]
+
+      }]
+    };
+  });
 
 
  this.get('/accounts', function() {

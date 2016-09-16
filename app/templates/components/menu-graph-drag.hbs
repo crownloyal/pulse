@@ -7,15 +7,15 @@
 	<label for="dashboard-description">Description:</label>
 	{{input class="u-width-full" id="dashboard-description" value=model.text}}
 
-	{{#each-in model.display as |key value|}}
+	{{#each model.display as |display|}}
 		{{#draggable-object content=this}}
-			{{input type="checkbox" name=key id=key checked=value click=(action "changeDashboardSelection")}}
-			<label for={{key}}>{{key}}</label>
+			{{input type="checkbox" name=display.name id=display.key checked=value click=(action "changeDashboardSelection")}}
+			<label for={{display.key}}>{{display.key}}</label>
 		{{/draggable-object}}
 	{{else}}
 		No pulse graphs selected.
 		Select one in the {{#link-to 'dashboard.board.edit' model.id}}Edit menu{{/link-to}}.
-	{{/each-in}}
+	{{/each}}
 
 		{{!-- 
 		
