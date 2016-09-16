@@ -3,34 +3,18 @@
 	{{yield}}
 
 	<label for="dashboard-name">Dashboard name:</label>
-	{{input class="u-width-full" id="dashboard-name" value=model.name}}
+	{{input class="u-width-full" id="dashboard-name" value=dashboard.name}}
 	<label for="dashboard-description">Description:</label>
-	{{input class="u-width-full" id="dashboard-description" value=model.text}}
+	{{input class="u-width-full" id="dashboard-description" value=dashboard.text}}
 
-	{{#each-in model.displays as |index value|}}
+	{{#each-in dashboard.displays as |index value|}}
 
 		{{#draggable-object content=this}}
 			{{input type="checkbox" name=value.name id=value.key checked=value.status click=(action "changeDashboardSelection")}}
 			<label for={{value.key}}>{{value.name}}</label>
 		{{/draggable-object}}
+		
 	{{else}}
 		No graphs available at this time. Sorry!
 	{{/each-in}}
-
-		{{!-- 
-		
-		Above should render as follows:
-			
-		{{#draggable-object content=this}}
-			{{input type="checkbox" name="backup health" id="backup-health" checked=model.display.backup-health}}
-			<label for="backup-health">Backup Health</label>
-		{{/draggable-object}}
-		{{#draggable-object content=this}}
-			{{input type="checkbox" name="error rates" id="error-rates" checked=model.display.error-rates}}
-			<label for="error-rates">Error rates</label>
-		{{/draggable-object}}
-		{{#draggable-object content=this}}
-			{{input type="checkbox" name="finance" id="finance" checked=model.display.finance}}
-			<label for="finance">Finance</label>
-		{{/draggable-object}} --}}
 </menu>
