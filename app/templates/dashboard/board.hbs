@@ -11,16 +11,20 @@
 
 {{outlet}}
 
+<hr>
+
 <section class="dashboard-display">
 
 	{{#each-in model.displays as |index value|}}
 
-		<b>Name: {{value.name}}</b> --
-		Status: {{value.status}}
+		{{#if value.status}}
+			Displaing {{value.name}}
+		{{/if}}
+
 		<br>
 
 	{{else}}
-		No graphs selected.
+		No graphs available. Sorry!
 	{{/each-in}}
 
 </section>
