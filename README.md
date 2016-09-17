@@ -2,8 +2,7 @@
 
 # Pulse
 
-Ember Dashboard gives you a simple boilerplate for your emberjs based dashboard.
-Simply hook up your APIs and you should be ready to go.
+The pulse project offers a dashboard front-end for all you information.
 
 ## Usage
 
@@ -12,6 +11,7 @@ Pulse requires 2 API endpoints
 * /auth/ or /accounts/
 * /dashboards/
 * /dashboards/:id
+
 
 ## Prerequisites
 

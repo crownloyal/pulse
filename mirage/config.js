@@ -54,7 +54,7 @@ export default function() {
       ]
 
       }]
-      }
+      };
     });
 
   this.get('/dashboards/3', function() {
