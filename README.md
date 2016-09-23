@@ -6,16 +6,16 @@ The pulse project offers a dashboard front-end for all you information.
 
 ## Usage
 
-Pulse requires 2 API endpoints
+Pulse requires 2 API endpoints - 
 
 * /auth/ or /accounts/
 * /dashboards/
-* /dashboards/:id
 
+The endpoints can easily be modified by customising the data adapters
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+To productively change application details and settings, you will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -38,3 +38,7 @@ You will need the following things properly installed on your computer.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Contribution
+
+This application is far from perfect but I will try to continously add bits and pieces.
+When you got bug fixes or added features, feel free to submit a loosely worded PR.
